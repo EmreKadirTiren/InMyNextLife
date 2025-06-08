@@ -1,0 +1,66 @@
+body { /* The style for the body meaning the entire page */
+  font-family: sans-serif; /* The font of the text */	
+  margin: 0; /* Removes the margin, a margin is the space around the element */
+  display: flex; /* Makes it so that the page doesnt have a fixed width */
+  flex-direction: column; /* Makes it so that the page is horizantal components and not vertical */
+  height: 100vh; /* Defines the height of the page */
+}
+
+#chat-container { /* The style for the chat container */
+  flex: 1; /* Makes the chat container take up all the space */
+  overflow-y: auto; /* Makes it so that the chat container can scroll and not the the entire page without it the text and send components would scroll with it.*/
+  padding: 10px;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble { /* Style for general chat bubbles */
+  max-width: 75%;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin: 10px 0;
+  display: inline-block;
+  color: #111;
+}
+
+.user { /* User text bubbles */
+  background: #d6b4fc; /* The color of the bubble */
+  align-self: flex-end;
+  text-align: right; /* Aligns the text to the right */
+  border-bottom-right-radius: 0; /* Makes the bottom right corner of the bubble square */
+}
+
+.ai { /* AI text bubbles */
+  background: #e0e0e0; /* The color of the bubble diffrent from user */
+  align-self: flex-start;
+  text-align: left; /* Aligns the text to the left */
+  border-bottom-left-radius: 0; /* Makes the bottom left corner of the bubble square */
+}
+
+#chat-form { /* The chat form style */
+  display: flex;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ccc; /* The border on the top of the chat form */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#user-input { /* The user input field */
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#send-button { /* The send button looks */
+  padding: 10px 20px; /* The size of the button */
+  background: #6c63ff; /* The color of the button */
+  color: rgb(255, 255, 255); /* The color of the text */
+  border: none;
+  border-radius: 20px; /* Changes the box to have rounded corners */	
+  cursor: pointer; /* Changes cursor to a different "icon" */
+  font-weight: bold; /* Makes the text bold */
+  font-style: italic; /* Changes the font to a different one */
+}
